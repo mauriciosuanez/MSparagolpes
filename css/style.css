@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap');
 *{
-	font-family: 'Arial', serif;
-	padding: 0;
-	margin: 0;
+    font-family: 'Arial', serif;
+    padding: 0;
+    margin: 0;
 }
 
 #botonera img
@@ -20,18 +20,51 @@
 .text-deco{
     text-decoration: none;
 }
-#botonera img
-{
-    width: 130px;
-    height: 60px;
+/*BOTONERA NAV-INICIO*/
+
+#botonera{
+    animation-name: textAlpa;
+    animation-duration: 4s;
 }
 
-#redes{
-    width: 50px;
-    height: 40px;
-    padding-right: 10px;
+#botonera img{
+    width: 180px;
 }
 
-.text-deco{
-    text-decoration: none;
+#botonera nav ul li a{
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    trasition: background-size . 3s;
 }
+
+nav ul li a: hover{ 
+    color: black;
+    font-weight: 600;
+}
+
+li{
+    animation-name: textAlpha;
+    animation-duration:  4s;
+}
+
+@keyframes textAlpha{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+#logo-animado{
+    animation-name: textAlpha;
+    animation-duration: 4s;
+}
+
+/*BOTONERA NAV-FIN*/
+
+/*TRANSFORMACION CATALOGO-INICIO*/
+
+.transformacion:hover{
+    webkit-transform: scale(9);
+}
+
+/*TRANSFORMACION CATALOGO-FIN*/
+
