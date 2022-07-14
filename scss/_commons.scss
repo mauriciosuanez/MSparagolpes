@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg-boxes{
+    background-color: $secondaryColor;
+}
+
+#font-nav{
+    font-size: $textSm;
+}
+
+#font-titles{
+    font-size: $textSm;
+    font-weight:$bold;
+}
+
+h1{
+    font-size: $textSm;
+}

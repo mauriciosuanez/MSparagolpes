@@ -1,70 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap');
-*{
-    font-family: 'Arial', serif;
-    padding: 0;
-    margin: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap");
+#botonera {
+  animation-name: textAlpha;
+  animation-duration: 4s; }
+  #botonera img {
+    width: 180px; }
+    @media (min-width: 280px) and (max-width: 300px) {
+      #botonera img {
+        width: 120px; } }
+    #botonera img li {
+      animation-name: textAlpha;
+      animation-duration: 4s; }
+      #botonera img li a {
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s; }
+        #botonera img li a:hover {
+          color: black;
+          font-weight: 600; }
 
-#botonera img
-{
-    width: 130px;
-    height: 60px;
-}
-
-#redes{
-    width: 50px;
-    height: 40px;
-    padding-right: 10px;
-}
-
-.text-deco{
-    text-decoration: none;
-}
-/*BOTONERA NAV-INICIO*/
-
-#botonera{
-    animation-name: textAlpa;
-    animation-duration: 4s;
-}
-
-#botonera img{
-    width: 180px;
-}
-
-#botonera nav ul li a{
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    trasition: background-size . 3s;
-}
-
-nav ul li a: hover{ 
-    color: black;
-    font-weight: 600;
-}
-
-li{
+@keyframes textAlpha {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  #botonera #logo-animado {
     animation-name: textAlpha;
-    animation-duration:  4s;
-}
+    animation-duration: 4s; }
 
-@keyframes textAlpha{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
+#footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: black; }
 
-#logo-animado{
-    animation-name: textAlpha;
-    animation-duration: 4s;
-}
+.text-deco {
+  text-decoration: none; }
 
-/*BOTONERA NAV-FIN*/
-
-/*TRANSFORMACION CATALOGO-INICIO*/
-
-.transformacion:hover{
-    webkit-transform: scale(9);
-}
-
-/*TRANSFORMACION CATALOGO-FIN*/
-
+#redes {
+  width: 40px;
+  height: 30px;
+  padding-right: 10px; }
