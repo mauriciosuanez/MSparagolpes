@@ -1,3 +1,5 @@
+//nesting - anidacion
+
 #botonera{
     animation-name: textAlpha;
     animation-duration: 4s;
@@ -17,8 +19,8 @@
             background-size: 0% 2px;
             transition: background-size .3s;
             &:hover{
-			color: $secondaryColor;
-			font-weight: $bold;
+            color: $secondaryColor;
+            font-weight: $bold;
                     }
         }
     

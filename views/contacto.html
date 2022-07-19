@@ -1,44 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>paragolpes para autos</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>paragolpes para autos</title>
 </head>
-<link rel="shortcut icon" href="../img/favicon.png">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.png">
+
+    <!--seo-->
+
+    <meta name="description" content="medios de contacto con MSParagolpes">
+
+    <meta name="keywords" content="paragolpes delanteros y paragolpes traseros">
+
+    <meta name="author" content="Suanez Mauricio">
+   
+<!-- Bootstrap CCS - bootstrap.min.css -->
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+<!-- MI CSS -->
+
+    <link rel="stylesheet" href="../css/style.css">
 <!-- mi css -->
-<body class="gridContainercontacto">
-<nav class="nav gradiente">
-	<a href="../index.html">
-	<img class="logoAnimado" src="../img/logo.png" alt="logo de la pagina web">
-</a>
-<ul>
-	<li>
-		<a href="catalogo.html">catalogo</a>
-	</li>
-	<li>
-		<a href="marcas.html">marcas</a>
+<body >
 
-	</li>
-	<li>
-		<a href="modelos.html">modelos</a>
+    <nav class="navbar navbar-expand-md bg-dark" id="botonera">
+      <div class="container-fluid" id="font-nav">
+        <a class="navbar-brand" href="../index.html"><img class="" src="../img/logo.png" alt="logo de MS paragolpes" /></a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="../views/catalogo.html">CATALOGO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../views/marcas.html">MARCAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../views/modelos.html">MODELOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../views/ofertas.html">OFERTAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../views/contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+          <form class="d-flex me-auto" role="search">
+            <input class="form-control me-2 border border-secondary" type="search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
-	</li>
-	<li> 
-		<a href="ofertas.html">ofertas</a>
-	</li>
-	<li> 
-		<a href="contacto.html">contacto</a>
-	</li>
 
-</ul>
-</nav>
+  <main class="text-light bg-dark">
+        <div class="text-center p-4 mb-3" id="font-titles">CONTACTO</div>
+    <div class="bg-primay row mx-5 mb-5 border border-1 border-primary rounded-1 p-4">
+        <div class="mb-2">
+            <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+            <input type="text" class="form-control border border-1 border-primary rounded-1" placeholder="">
+        </div>
+        <div class="mb-2">
+            <label for="exampleFormControlInput1" class="form-label">Correo electrónico:</label>
+            <input type="email" class="form-control border border-1 border-primary rounded-1" placeholder="">
+        </div>
+        <div class="mb-2">
+            <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu mensaje</label>
+            <textarea class="form-control border border-1 border-primary rounded-1" rows="3"></textarea>
+        </div>
+        <div class="col-auto">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+    </div>
 
-
-
-<main id="main" class="containerContact">
+    </main>
+<!--<main id="main" class="containerContact">
 
 	<h1 class="cajaModelo textcenter textwhite gradiente">CONTACTO</h1>
 
@@ -78,18 +119,24 @@
     
         </div>
     
-        </main>
+        </main>-->
 
-<footer class="bgblack textwhite footer gradiente"> 
-		<div> <h4>
-			 República del Líbano 1633 - Avellaneda - Gerli</h4><br>
-		<a href="https:/es-la.facebook.com/" target="_blank">
-			<img src="../img/facebook.png" alt="">
-		</a>
-		<a href="https:/www.instagram.com/" target="_blank">
-			<img src="../img/instagram.png" alt="">
-		</a>
-	</footer>
+   <footer class="p-3 bg-dark text-white contanier-fluid text-center">
+      <div><h4>
+          República del Líbano 1633 - Avellaneda - Gerli</h4>
+      <a class="text-deco" href="https://es-la.facebook.com/" target="_blanck">
+         <img class="text-center" id="redes"src="../img/facebook.png" alt="">
+      </a>
+      <a class="text-deco" href="https://www.instagram.com/" target="_blanck">
+         <img id="redes" src="../img/instagram.png" alt="">
+      </a>
+      </div>
+
+
+   </footer>
+
+<!-- JS - bootstrap.min.js -->
+<script src="../js/bootstrap.min.js"></script>
 
 </body>
 </html>
