@@ -1,0 +1,43 @@
+//extend
+
+.tituloMarcas
+{
+    width: 90%;
+    color: $mainColor;
+    text-align: center;
+    font-weight: $bold;
+    padding-top: 10px;
+    margin: 30px;
+    font-size: 30px;
+}
+
+.tituloPaginas{
+    @extend .tituloMarcas;
+    margin-top: 11px;
+}
+
+//mixin
+
+@mixin texto($size, $interlineado, $color){
+    font-family: $mainFont;
+    font-size: $size;
+    line-height: $interlineado;
+    color: $color;
+}
+
+h6{
+    @include texto($textSm, 2em, white);
+    font-weight: $bold
+}
+
+//map
+$paleta:(
+    'uno': #0D0B0B,
+    'dos': white,
+    'tres': gray,
+    'cuatro': red,
+    );
+
+.bg-black{
+    background-color: map-get($map:$paleta, $key: uno);
+}
